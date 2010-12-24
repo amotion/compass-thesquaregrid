@@ -55,11 +55,11 @@ $squaregrid-square-size: 28px !default
 =grid-suffix($n, $cols: $squaregrid-columns)
   padding-right: $squaregrid-container-width / $cols * $n
 
-=square-prefix($n, $cols: $squaregrid-squares)
-  padding-left: $squaregrid-container-width / $cols * $n
+=square-prefix($n, $squares: $squaregrid-squares)
+  padding-left: $squaregrid-container-width / ($squares + 1) * $n
 
-=square-suffix($n, $cols: $squaregrid-squares)
-  padding-right: $squaregrid-container-width / $cols * $n
+=square-suffix($n, $squares: $squaregrid-squares)
+  padding-right: $squaregrid-container-width / ($squares + 1) * $n
 
 =grids($cols: $squaregrid-columns, $gutter-width: $squaregrid-square-size, $squares: $squaregrid-squares)
   #{enumerate(".sg", 1, $squares, "-")}
