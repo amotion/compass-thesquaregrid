@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.3"
-  s.date = "2010-12-23"
+  s.version = "0.0.5"
+  s.date = "2011-04-30"
 
   # Gem Details
   s.name = "compass-thesquaregrid"
